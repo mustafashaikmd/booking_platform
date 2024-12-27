@@ -1,0 +1,300 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Carousel and Text Section */
+.carousel-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#prevBtn {
+  left: -118px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+/* Text beside the carousel */
+.carousel-text {
+  max-width: 40%;
+}
+
+.carousel-text h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.carousel-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border: none;
+  width: 10%;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#logoutButton {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #d32f2f;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label{
+  width: 20%;
+}
+.dashboard-content h2 {
+  margin-bottom: 10px;
+}
+
+#bookingHistory, #notificationList {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.notifications {
+  margin-top: 20px;
+}
+
+/* Booking Form */
+.booking-form {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.payment-section {
+  margin-top: 20px;
+}
+
+#logoutButton{
+  top:130px;
+  right: 250px;
+} 
+
+#bookButton{
+  top: auto;
+  left: 42%;
+}
+
+#paymentButton{
+  top:auto;
+  left: 40%;
+}
+
+
+
+.payment-section button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-section button:hover {
+  background-color: #1e88e5;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .carousel-text-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-container {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  .carousel-text {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+  

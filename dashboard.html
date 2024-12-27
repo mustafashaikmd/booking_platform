@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Booking Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+        <button id="logoutButton">Logout</button>
+    </header>
+
+    <section class="dashboard-content">
+        <h2>Welcome, <span id="usernameDisplay"></span></h2>
+        <p>Your recent bookings:</p>
+        <ul id="bookingHistory"></ul>
+        <section class="notifications">
+            <h3>Notifications</h3>
+            <ul id="notificationList"></ul>
+        </section>
+    </section>
+
+    <section class="booking-form">
+        <h2>Book a Service</h2>
+        <form id="bookingForm">
+            <label for="service">Service</label>
+            <select id="service" required>
+                <option value="">Select</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Flight">Flight</option>
+                <option value="Car">Car Rental</option>
+            </select><br>
+            <label for="date">Date</label>
+            <input type="date" id="date" required><br>
+            <label for="time">Time</label>
+            <input type="time" id="time" required><br>
+            <label for="price">Price</label>
+            <input type="text" id="price" readonly><br><br><br>
+            <button id="bookButton" type="submit">Book Now</button>
+        </form>
+        <section class="payment-section"><br>
+            <h3>Complete Your Payment</h3><br>
+            <button id="paymentButton">Proceed to Payment</button><br>
+        </section>
+    </section>
+
+    <footer>
+        <p>© 2024 Booking Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

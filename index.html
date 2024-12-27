@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your hotel,flight and car rental booking.">
+    <title>Booking Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Booking Platform</h1>
+        <nav>
+            <a href="login.html" aria-label="Go to Login Page">Login</a> |
+            <a href="signup.html" aria-label="Go to Signup Page">Signup</a>
+        </nav>
+    </header>
+
+    <!-- Carousel and Text Section -->
+    <section class="carousel-text-section">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="hotel.jpg" alt="hotel booking" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="flight.jpg" alt="flight booking" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="car.jpg" alt="car rental booking" loading="lazy">
+                </div>
+            </div>
+            <button class="prev" id="prevBtn" aria-label="Previous Slide">&#10094;</button>
+            <button class="next" id="nextBtn" aria-label="Next Slide">&#10095;</button>
+        </div>
+        
+        <!-- Text beside the carousel -->
+        <div class="carousel-text">
+            <h2>Book Your Tickets Today!</h2>
+            <p>Explore a wide variety of hotels and transport including flights and car rentals. Choose your favorite hotel, transport and book tickets instantly!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Booking Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
